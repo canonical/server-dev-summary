@@ -1,6 +1,6 @@
 # Hello Ubuntu Server!
 The purpose of this weekly email is to make sure our community can follow
-development with toes dipped in before & between jumping headlong into
+development with toes dipped in before and between jumping headlong into
 helping shape Ubuntu Server!
 
 ## Spotlight: TODO
