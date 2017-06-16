@@ -13,7 +13,7 @@ TODO
 ### curtin
 -
 
-## Bug Triage and Work
+## Bug Work and Triage
 - TODO bugs reviewed, TODO accepted, TODO in the [backlog](https://bugs.launchpad.net/~ubuntu-server/+subscribedbugs)
 - [Notes on daily bug triage](https://wiki.ubuntu.com/ServerTeam/KnowledgeBase#Bug_Triage)
 
