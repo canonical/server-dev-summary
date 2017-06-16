@@ -1,4 +1,4 @@
-#Hello Ubuntu Server!
+# Hello Ubuntu Server!
 The purpose of this weekly email is to make sure our community can follow
 development with toes dipped in before & between jumping headlong into
 helping shape Ubuntu Server!
@@ -7,10 +7,11 @@ helping shape Ubuntu Server!
 TODO
 
 ## cloud-init and curtin
-- cloud-init:
-  -
-- curtin:
-  -
+### cloud-init
+-
+
+### curtin
+-
 
 ## Bug Triage and Work
 - TODO bugs reviewed, TODO accepted, TODO in the [backlog](https://bugs.launchpad.net/~ubuntu-server/+subscribedbugs)
