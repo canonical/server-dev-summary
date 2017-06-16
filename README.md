@@ -14,22 +14,22 @@ Below is a list of steps to generate the complete summary:
 1. Template
   - Copy the template.md file to doc string
   - `cp template.md doc/$(date +'%Y-%m-%d').md`
-1. Uploads
+2. Uploads
   - Download and run the [upload report](https://git.launchpad.net/server-team-ci/tree/scripts/upload_report.py)
   - Use the preivous Friday as the input date
-1. Triage Queue
+3. Triage Queue
   - Look at the bug triage spreadsheet and look at the rows for the past week
   - If someone has not done bug triage that is fine
   - Sum up the number of bugs reviewed (Column J)
   - Sum up the number of bugs accepted (Column K)
   - View the final count of bugs in the backlog (Column I)
-1. IRC Meeting
+4. IRC Meeting
   - Get the link to the latest meeting from [Meetingology](https://ubottu.com/meetingology/logs/ubuntu-meeting/)
-1. cloud-init and curtin
+5. cloud-init and curtin
   - Review the Trello board done column
   - Summarize any done cards
-1. Ubuntu Server
+6. Ubuntu Server
   - Review the Trello board done column
   - Summarize any done cards
-1. Review
+7. Review
   - Send out a link to the draft for review to the team
