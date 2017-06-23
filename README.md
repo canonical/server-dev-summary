@@ -15,7 +15,7 @@ Below is a list of steps to generate the complete summary:
   - Copy the template.md file to doc string
   - `cp template.md doc/$(date +'%Y-%m-%d').md`
 2. Uploads
-  - Download and run the [upload report](https://git.launchpad.net/server-team-ci/tree/scripts/upload_report.py)
+  - Download and run the [upload report](https://git.launchpad.net/server-team-ci/plain/scripts/upload_report.py)
   - Use the preivous Friday as the input date
 3. Triage Queue
   - Look at the bug triage spreadsheet and look at the rows for the past week
