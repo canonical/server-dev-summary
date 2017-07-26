@@ -37,10 +37,10 @@ Below is a list of steps to generate the complete summary:
       - In wordpress
         - create new blog post (articles -> add an article):
         - tags: Ubuntu Server, Server, weekly
-	- title: "Ubuntu Server Development Summary - DD MON YYYY"
-	- text tab: --> paste html from chrome app <--
-	- bottom right: featured image -> set featured image
-	- publish!
+        - title: "Ubuntu Server Development Summary - DD MON YYYY"
+        - text tab: --> paste html from chrome app <--
+        - bottom right: featured image -> set featured image
+        - publish!
   - Send email
     - `sudo pip3 install markdown-link-style`
     - `mdl-style footnote 2017-07-07.md /tmp/email.txt`
