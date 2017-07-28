@@ -31,7 +31,7 @@ Below is a list of steps to generate the complete summary:
   - Send out a link to the draft for review to the team
 8. Publish
   - Get image
-  - Create blog post on insights.ubuntu.com (powersj, dpb)
+  - Create blog post on insights.ubuntu.com
     - Chrome app: "Minimalist Markdown", works well.
       - Paste MD into left pane, copy out HTML from right pane
       - In wordpress
@@ -44,4 +44,6 @@ Below is a list of steps to generate the complete summary:
   - Send email
     - `sudo pip3 install markdown-link-style`
     - `mdl-style footnote 2017-07-07.md /tmp/email.txt`
+    - Verify no line is longer than 72 charachters
+    - Subject: Ubuntu Server Development Summary - DD MON YYYY
     - mailto:ubuntu-server@lists.ubuntu.com
