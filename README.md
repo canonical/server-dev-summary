@@ -15,7 +15,7 @@ Below is a list of steps to generate the complete summary:
   - Copy the template.md file to doc string
   - `cp template.md doc/$(date +'%Y-%m-%d').md`
 2. Uploads
-  - Download and run the [upload report](https://raw.githubusercontent.com/canonical-server/metrics/master/metrics/upload_report.py)
+  - Run the upload report, called `./upload_report.py`
   - Use the preivous Friday as the input date
 3. Triage Queue
   - Login to the team KPI and grab the three values under Bug Triage.
