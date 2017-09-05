@@ -33,5 +33,5 @@ TODO
 ```
 
 ## Contact the Ubuntu Server team
-* Chat on #ubuntu-server on Freenode
-* Email the [ubuntu-server mailing list](https://lists.ubuntu.com/mailman/listinfo/ubuntu-server)
+- Chat on #ubuntu-server on Freenode
+- Email the [ubuntu-server mailing list](https://lists.ubuntu.com/mailman/listinfo/ubuntu-server)
