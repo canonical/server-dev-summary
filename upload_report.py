@@ -63,6 +63,10 @@ def generate_uploads(start_date):
                 'pocket': spph.pocket,
                 'created': spph.date_created,
             }
+
+            if report_entry['pocket'] == 'Security':
+                    continue
+
             if report_entry['series'] == devel:
                 if report_entry['pocket'] == 'Release':
                     migrated_versions.add(report_entry['version'])
@@ -77,6 +81,7 @@ def generate_uploads(start_date):
 
             if report_entry['sponsor'] == 'ubuntu-archive-robot':
                 continue  # skip syncs
+
             yield report_entry
 
 
