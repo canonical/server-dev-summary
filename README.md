@@ -39,6 +39,8 @@ Below is a list of steps to generate the complete summary:
   - Create blog post on insights.ubuntu.com
     - Create new blog post: articles -> add an article
     - Tags: Ubuntu Server, Server, weekly
+    - Topic: Cloud, Server
+    - Group: Cloud and server
     - Title: "Ubuntu Server Development Summary - DD MON YYYY"
     - Text Tab: Paste html from chrome app
     - Bottom Right: Featured Image -> Set Featured Image
