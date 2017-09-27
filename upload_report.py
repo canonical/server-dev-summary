@@ -40,9 +40,7 @@ def generate_uploads(start_date):
     ]
 
     ubuntu = launchpad.distributions['ubuntu']
-    devels = ubuntu.getDevelopmentSeries()
-    assert len(devels) == 1
-    devel = devels[0].name
+    devel = ubuntu.current_series_link.split('/')[-1]
     archive = ubuntu.main_archive
 
     for package in packages:
