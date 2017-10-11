@@ -4,11 +4,13 @@ The purpose of this communication is to provide a status update and highlights f
 ## Spotlight: TODO
 TODO
 
-## cloud-init and curtin
-### cloud-init
+## cloud-init
 -
 
-### curtin
+## curtin
+-
+
+## git-ubuntu
 -
 
 ## Bug Work and Triage
