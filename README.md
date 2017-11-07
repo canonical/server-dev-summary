@@ -30,6 +30,7 @@ Below is a list of steps to generate the complete summary:
 6. Review
   - Send out a link to the draft for review to the team
   - Check spelling and grammer during this time as well
+  - Add http://pad.lv/ links for Launchpad bugs.
 7. Publish
   - Get Ubuntu Server image for the week
   - Convert markdown to HTML
