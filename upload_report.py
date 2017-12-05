@@ -83,6 +83,27 @@ def generate_uploads(start_date):
             yield report_entry
 
 
+def print_sru(entries):
+    """Print SRU entries."""
+    print('')
+    print('### Uploads to the Development Release')
+    for entry in entries:
+        print('%s, %s, %s, %s' % (entry['package'], entry['series'],
+                                  entry['version'], entry['signer']))
+    print('Total: %s' % len(entries))
+
+
+
+def print_dev(entries):
+    """Print Dev release entries."""
+    print('')
+    print('### Uploads to the Supported Releases')
+    for entry in entries:
+        print('%s, %s, %s' % (entry['package'], entry['version'],
+                              entry['signer']))
+    print('Total: %s' % len(entries))
+
+
 def main():
     """Get report and print."""
     report = sorted(
@@ -96,19 +117,10 @@ def main():
     )
 
     for category, entries in grouped_report:
-        count = 0
-        print('Category: %s' % category)
-        for entry in entries:
-            count += 1
-            if category == 'SRU':
-                print('%s, %s, %s, %s' % (entry['package'], entry['series'],
-                                          entry['version'], entry['signer']))
-            else:
-                print('%s, %s, %s' % (entry['package'], entry['version'],
-                                      entry['signer']))
-
-        print('Total: %s' % count)
-        print()
+        if category == 'SRU':
+            print_sru(list(entries))
+        else:
+            print_dev(list(entries))
 
 
 if __name__ == '__main__':

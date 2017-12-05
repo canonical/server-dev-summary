@@ -17,19 +17,9 @@ TODO
 - TODO in the [backlog](https://bugs.launchpad.net/~ubuntu-server/+subscribedbugs), TODO bugs reviewed
 - [Notes on daily bug triage](https://wiki.ubuntu.com/ServerTeam/KnowledgeBase#Bug_Triage)
 
-## Ubuntu Server Packages
-Below is a summary of uploads to the development and supported releases. Current status of the Debian to Ubuntu merges is tracked on the [Merge-o-Matic page](https://merges.ubuntu.com/main.html). For a full list of recent merges with change logs please see the Ubuntu Server [report](http://reqorts.qa.ubuntu.com/reports/ubuntu-server/merges.html).
-
-### Uploads to the Development Release (Bionic)
-```
-TODO
-```
-
-### Uploads to Supported Releases (Trusty, Xenial, Zesty, Artful)
-```
-TODO
-```
-
 ## Contact the Ubuntu Server team
 - Chat on #ubuntu-server on Freenode
 - Email the [ubuntu-server mailing list](https://lists.ubuntu.com/mailman/listinfo/ubuntu-server)
+
+## Ubuntu Server Packages
+Below is a summary of uploads to the development and supported releases. Current status of the Debian to Ubuntu merges is tracked on the [Merge-o-Matic page](https://merges.ubuntu.com/main.html). For a full list of recent merges with change logs please see the Ubuntu Server [report](http://reqorts.qa.ubuntu.com/reports/ubuntu-server/merges.html).

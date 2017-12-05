@@ -1,11 +1,17 @@
 #!/bin/bash
 set -u
 
-TODAY=$(date +'%Y-%m-%d')
-LAST_SUMMARY=$(date -d "now -7 days" +'%Y-%m-%d')
+YEAR=$(date +'%Y')
+SUMMARY_FILEPATH="doc/$YEAR/$(date +'%Y-%m-%d').md"
+LAST_SUMMARY_DATE=$(date -d "now -7 days" +'%Y-%m-%d')
 
-if [ ! -e doc/"$TODAY".md ]; then
-    cp template.md doc/"$TODAY".md
+if [ ! -d "doc/$YEAR" ]; then
+    mkdir -p "doc/$YEAR"
 fi
 
-./upload_report.py "$LAST_SUMMARY"
+if [ -e "$SUMMARY_FILEPATH" ]; then
+    rm "$SUMMARY_FILEPATH"
+fi
+
+cp template.md "$SUMMARY_FILEPATH"
+./upload_report.py "$LAST_SUMMARY_DATE" >> "$SUMMARY_FILEPATH"
