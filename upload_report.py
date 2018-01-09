@@ -106,14 +106,14 @@ def print_proposed_sru(entries):
           ', checking packages for update regressions, and making sure to '
           'mark affected bugs [verified as fixed]'
           '(https://wiki.ubuntu.com/StableReleaseUpdates#Verification).\n')
-    print('Total: %s' % len(entries))
+    print('Total: %s\n' % len(entries))
 
     if not entries:
         return
 
     for entry in entries:
         uploader = entry['author'] if entry['author'] else entry['signer']
-        print('[`%s, %s, %s, %s`](https://launchpad.net/ubuntu/+source/%s/%s)' %
+        print('- [`%s, %s, %s, %s`](https://launchpad.net/ubuntu/+source/%s/%s)' %
               (entry['package'], entry['series'], entry['version'], uploader,
                entry['package'], entry['version']))
 
@@ -122,14 +122,14 @@ def print_sru(entries):
     """Print SRU entries."""
     print('')
     print('### Uploads released to the Supported Releases')
-    print('Total: %s' % len(entries))
+    print('Total: %s\n' % len(entries))
 
     if not entries:
         return
 
     for entry in entries:
         uploader = entry['author'] if entry['author'] else entry['signer']
-        print('[`%s, %s, %s, %s`](https://launchpad.net/ubuntu/+source/%s/%s)' %
+        print('- [`%s, %s, %s, %s`](https://launchpad.net/ubuntu/+source/%s/%s)' %
               (entry['package'], entry['series'], entry['version'], uploader,
                entry['package'], entry['version']))
 
@@ -138,14 +138,14 @@ def print_dev(entries):
     """Print Dev release entries."""
     print('')
     print('### Uploads to the Development Release')
-    print('Total: %s' % len(entries))
+    print('Total: %s\n' % len(entries))
 
     if not entries:
         return
 
     for entry in entries:
         uploader = entry['author'] if entry['author'] else entry['signer']
-        print('[`%s, %s, %s`](https://launchpad.net/ubuntu/+source/%s/%s)' %
+        print('- [`%s, %s, %s`](https://launchpad.net/ubuntu/+source/%s/%s)' %
               (entry['package'], entry['version'], uploader,
                entry['package'], entry['version']))
 
