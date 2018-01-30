@@ -38,14 +38,14 @@ Below is a list of steps to generate the complete summary:
       - Paste MD into left pane, copy out HTML from right pane
     - Or use [online app](http://dillinger.io/)
   - Create blog post on insights.ubuntu.com
-    - Create new blog post: articles -> add an article
-    - Tags: Ubuntu Server, Server, weekly
-    - Topic: Cloud, Server
-    - Group: Cloud and server
-    - Title: "Ubuntu Server Development Summary - DD MON YYYY"
-    - Text Tab: Paste html from chrome app
-    - Bottom Right: Featured Image -> Set Featured Image
-    - Publish!
+    1. Create new blog post: articles -> add an article
+    2. Title: "Ubuntu Server Development Summary - DD MON YYYY"
+    3. Tags: Ubuntu Server, Server, weekly
+    4. Topic: Cloud, Server
+    5. Group: Cloud and server
+    6. Text Tab: Paste html from chrome app
+    7. Bottom Right: Featured Image -> Set Featured Image
+    8. Publish!
 8. Send email
   - `sudo pip3 install markdown-link-style`
   - `mdl-style footnote 2017-07-07.md /tmp/email.txt`
