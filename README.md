@@ -39,7 +39,7 @@ Below is a list of steps to generate the complete summary:
     - Or use [online app](http://dillinger.io/)
   - Create blog post on insights.ubuntu.com
     1. Create new blog post: articles -> add an article
-    2. Title: "Ubuntu Server Development Summary - DD MON YYYY"
+    2. Title: "Ubuntu Server development summary - DD Month YYYY"
     3. Tags: Ubuntu Server, Server, weekly
     4. Topic: Cloud, Server
     5. Group: Cloud and server
@@ -50,7 +50,7 @@ Below is a list of steps to generate the complete summary:
   - `sudo pip3 install markdown-link-style`
   - `mdl-style footnote 2017-07-07.md /tmp/email.txt`
   - Verify no line is longer than 72 charachters
-  - Subject: Ubuntu Server Development Summary - DD MON YYYY
+  - Subject: Ubuntu Server development summary - DD Month YYYY
   - mailto:ubuntu-server@lists.ubuntu.com
 9. Post to Community Forum
   - https://community.ubuntu.com/c/server
