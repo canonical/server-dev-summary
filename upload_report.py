@@ -100,7 +100,7 @@ def generate_uploads(start_date):
 def print_proposed_sru(entries):
     """Print SRU Proposed entries."""
     print('')
-    print('### Proposed Uploads to the Supported Releases')
+    print('### Proposed Uploads to the Supported Releases\n')
     print('Please consider testing the following by [enabling proposed]'
           '(https://wiki.ubuntu.com/Testing/EnableProposed)'
           ', checking packages for update regressions, and making sure to '
@@ -121,7 +121,7 @@ def print_proposed_sru(entries):
 def print_sru(entries):
     """Print SRU entries."""
     print('')
-    print('### Uploads released to the Supported Releases')
+    print('### Uploads Released to the Supported Releases\n')
     print('Total: %s\n' % len(entries))
 
     if not entries:
@@ -137,7 +137,7 @@ def print_sru(entries):
 def print_dev(entries):
     """Print Dev release entries."""
     print('')
-    print('### Uploads to the Development Release')
+    print('### Uploads to the Development Release\n')
     print('Total: %s\n' % len(entries))
 
     if not entries:
