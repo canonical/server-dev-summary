@@ -52,5 +52,7 @@ Below is a list of steps to generate the complete summary:
   - Verify no line is longer than 72 charachters
   - Subject: Ubuntu Server development summary - DD Month YYYY
   - mailto:ubuntu-server@lists.ubuntu.com
+  - Bcc: lwn@lwn.net
+  - Add link to insights post to top of email
 9. Post to Community Forum
   - https://community.ubuntu.com/c/server
