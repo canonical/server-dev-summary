@@ -3,7 +3,7 @@ set -u
 
 YEAR=$(date +'%Y')
 SUMMARY_FILEPATH="doc/$YEAR/$(date +'%Y-%m-%d').md"
-LAST_SUMMARY_DATE=$(date -d "now -7 days" +'%Y-%m-%d')
+LAST_SUMMARY_DATE=$(basename $(ls doc/*/*-*.md | sort | tail -1 ) .md)
 
 if [ ! -d "doc/$YEAR" ]; then
     mkdir -p "doc/$YEAR"
