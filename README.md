@@ -54,5 +54,3 @@ Below is a list of steps to generate the complete summary:
   - mailto:ubuntu-server@lists.ubuntu.com
   - Bcc: lwn@lwn.net
   - Add link to insights post to top of email
-9. Post to Community Forum
-  - https://community.ubuntu.com/c/server
