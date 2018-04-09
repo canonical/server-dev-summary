@@ -14,4 +14,5 @@ if [ -e "$SUMMARY_FILEPATH" ]; then
 fi
 
 cp template.md "$SUMMARY_FILEPATH"
-./upload_report.py "$LAST_SUMMARY_DATE" >> "$SUMMARY_FILEPATH"
+./report_backlog.py "$LAST_SUMMARY_DATE" >> "$SUMMARY_FILEPATH"
+./report_uploads.py "$LAST_SUMMARY_DATE" >> "$SUMMARY_FILEPATH"
