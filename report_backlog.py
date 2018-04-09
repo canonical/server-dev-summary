@@ -42,6 +42,7 @@ def bug_reviewed_size(start_date):
 
 def main():
     """Get report and print."""
+    print('')
     print('## Bug Work and Triage\n')
     bug_backlog_size()
     bug_reviewed_size(sys.argv[1])
