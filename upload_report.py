@@ -1,7 +1,7 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """Determine uploads into development release and SRUs.
 
-Copyright 2017 Canonical Ltd.
+Copyright 2017-2018 Canonical Ltd.
 Robbie Basak <robie.basak@canonical.com>
 Joshua Powers <josh.powers@canonical.com>
 """
@@ -29,7 +29,7 @@ def person_name(launchpad, person_link):
             return launchpad.load(person_link).name
         except ClientError as exc:
             if exc.response["status"] == "410":  # gone, user suspended
-               return None
+                return None
     return None
 
 
@@ -71,7 +71,7 @@ def generate_uploads(start_date):
             }
 
             if report_entry['pocket'] == 'Security':
-                    continue
+                continue
 
             if report_entry['series'] == devel:
                 if report_entry['pocket'] == 'Release':
@@ -149,18 +149,29 @@ def print_dev(entries):
               (entry['package'], entry['version'], uploader,
                entry['package'], entry['version']))
 
+
 def main():
     """Get report and print."""
+    print('## Ubuntu Server Packages\n')
+    print(
+        'Below is a summary of uploads to the development and supported\n'
+        'releases. Current status of the Debian to Ubuntu merges is tracked on\n'
+        'the [Merge-o-Matic page](https://merges.ubuntu.com/main.html). For a\n'
+        'full list of recent merges with change logs please see the Ubuntu\n'
+        'Server [report](http://reqorts.qa.ubuntu.com'
+        '/reports/ubuntu-server/merges.html).'
+    )
+
     report = sorted(
         generate_uploads(sys.argv[1]),
         key=lambda r: r['category']
     )
 
     print_proposed_sru([item for item in report if item['category'] == SRU
-                       and item['pocket'] == 'Proposed'
-                       and not item['migrated']])
+                        and item['pocket'] == 'Proposed'
+                        and not item['migrated']])
     print_sru([item for item in report if item['category'] == SRU
-              and item['pocket'] == 'Updates'])
+               and item['pocket'] == 'Updates'])
     print_dev([item for item in report if item['category'] == DEV])
 
 
