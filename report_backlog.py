@@ -2,7 +2,7 @@
 """Determine backlog count and bugs reviewed for report.
 
 Copyright 2018 Canonical Ltd.
-Joshua Powers <josh.powesrs@canonical.com>
+Joshua Powers <josh.powers@canonical.com>
 """
 from datetime import datetime
 import json

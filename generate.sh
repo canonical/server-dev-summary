@@ -1,4 +1,9 @@
 #!/bin/bash
+# Generate initial weekly report
+#
+# Copyright 2017-2018 Canonical Ltd.
+# David Britton <david.britton@canonical.com>
+# Joshua Powers <josh.powers@canonical.com>
 set -u
 
 YEAR=$(date +'%Y')
