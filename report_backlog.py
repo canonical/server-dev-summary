@@ -14,8 +14,11 @@ BASE_URL = 'http://10.25.2.224:9090/api/v1/query?query='
 
 def _get_json_from_url(json_url):
     """Return JSON from a URL."""
-    with urlopen(json_url) as url:
-        data = json.loads(url.read().decode())
+    try:
+        with urlopen(json_url) as url:
+            data = json.loads(url.read().decode())
+    except TimeoutError:
+        sys.exit(1)
 
     return data
 

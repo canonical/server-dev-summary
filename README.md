@@ -30,7 +30,7 @@ Below is a list of steps to generate the complete summary:
     - Send out a link to the draft for review to the team
     - Check spelling and grammar during this time as well
     - Add `http://pad.lv/` links for Launchpad bugs.
-1. Run publish to generate html and email formats
+1. Run `publish.sh` to generate html and email formats
 1. Insights
       1. Login to insights.ubuntu.com and create new post
       2. Create new blog post: articles -> add an article
@@ -42,12 +42,10 @@ Below is a list of steps to generate the complete summary:
       8. Bottom Right: Featured Image -> Set Featured Image
       9. Publish!
 1. Send email to ubuntu-server
-    - `sudo pip3 install markdown-link-style`
-    - `mdl-style footnote 2017-07-07.md /tmp/email.txt`
-    - Verify no line is longer than 72 characters
+    - Use the $date.email file as the body of the email
     - Subject: Ubuntu Server development summary - DD Month YYYY
-    - mailto:ubuntu-server@lists.ubuntu.com
-    - Bcc: lwn@lwn.net
+    - to: ubuntu-server@lists.ubuntu.com
+    - bcc: lwn@lwn.net
     - Add link to insights post to top of email
 1. Publish to Twitter
     - TODO
