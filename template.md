@@ -8,13 +8,7 @@ and use the Ubuntu Server Team [mailing list](https://lists.ubuntu.com/mailman/l
 
 ## Spotlight:
 
-## cloud-init
-
--
-
-## curtin
-
--
+{cloud_init_curtin_logs}
 
 ## git-ubuntu
 

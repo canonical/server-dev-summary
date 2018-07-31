@@ -18,6 +18,13 @@ if [ -e "$SUMMARY_FILEPATH" ]; then
     rm "$SUMMARY_FILEPATH"
 fi
 
+
+if [ -z  `which log2dch` ]; then
+  echo "Missing log2dch script from https://github.com/CanonicalLtd/uss-tableflip for cloud-init and curtin dev-summary"
+  exit 1
+fi
+
 cp template.md "$SUMMARY_FILEPATH"
+./report_git_backlog.py $LAST_SUMMARY_DATE $SUMMARY_FILEPATH
 ./report_backlog.py "$LAST_SUMMARY_DATE" >> "$SUMMARY_FILEPATH"
 ./report_uploads.py "$LAST_SUMMARY_DATE" >> "$SUMMARY_FILEPATH"
