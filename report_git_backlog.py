@@ -7,8 +7,10 @@ import argparse
 from datetime import datetime
 import subprocess as subp
 import os
+import shutil
 import sys
 from urllib.request import urlopen
+CORE_DEVS = ['Scott Moser', 'Ryan Harper', 'Josh Powers', 'Chad Smith']
 
 
 def get_unreported_commits(project_name, start_date):
@@ -40,8 +42,15 @@ def get_unreported_commits(project_name, start_date):
         ['git', 'log', '--since', '%sT00:00:00-00:00' % start_date])
     with open('/tmp/recent_git_log', 'wb') as stream:
         stream.write(git_log)
-    dch_output = subp.check_output(
-        ['log2dch', '/tmp/recent_git_log']).decode('utf-8')
+    if shutil.which('log2dch'):
+        dch_output = subp.check_output(
+            ['log2dch', '/tmp/recent_git_log']).decode('utf-8')
+    else:
+        dch_output = subp.check_output(
+            ['git', 'log', '--since', '%sT00:00:00-00:00' % start_date,
+             "--format=  - %s [%aN]"]).decode('utf-8')
+        for person in CORE_DEVS:
+            dch_output = dch_output.replace(' [%s]' % person, '')
 
     unreported_lines = []
     for line in dch_output.splitlines():

@@ -20,11 +20,10 @@ fi
 
 
 if [ -z  `which log2dch` ]; then
-  echo "Missing log2dch script from https://github.com/CanonicalLtd/uss-tableflip for cloud-init and curtin dev-summary"
-  exit 1
+  echo "Warning: missing log2dch script from https://github.com/CanonicalLtd/uss-tableflip for cloud-init and curtin dev-summary. This will result in missing bug references on published commit messages."
 fi
 
 cp template.md "$SUMMARY_FILEPATH"
-./report_git_backlog.py $LAST_SUMMARY_DATE $SUMMARY_FILEPATH
+./report_git_backlog.py "$LAST_SUMMARY_DATE" "$SUMMARY_FILEPATH"
 ./report_backlog.py "$LAST_SUMMARY_DATE" >> "$SUMMARY_FILEPATH"
 ./report_uploads.py "$LAST_SUMMARY_DATE" >> "$SUMMARY_FILEPATH"
