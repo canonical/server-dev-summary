@@ -5,12 +5,14 @@ Copyright 2018 Canonical Ltd.
 """
 import argparse
 from datetime import datetime
+import re
 import subprocess as subp
 import os
 import shutil
 import sys
 from urllib.request import urlopen
 CORE_DEVS = ['Scott Moser', 'Ryan Harper', 'Josh Powers', 'Chad Smith']
+BUG_LINK_TMPL = '[LP: #{bugid}](https://bugs.launchpad.net/bugs/{bugid})'
 
 
 def get_unreported_commits(project_name, start_date):
@@ -56,13 +58,20 @@ def get_unreported_commits(project_name, start_date):
     for line in dch_output.splitlines():
        stripped_line = line.strip()
        if stripped_line.startswith('- '):
-           prefix = '  '
+           prefix = ''
            if stripped_line in previous_status:
                break
        else:  # Proper indent of multi-line entry
-           prefix = '    '
+           prefix = '  '
+       bug_match = re.match(r'.*LP: #(?P<bugid>\d+)', stripped_line)
+       if bug_match:
+           bugid = bug_match.groupdict()['bugid']
+           bug_link = BUG_LINK_TMPL.format(bugid=bugid)
+           import pdb; pdb.set_trace()
+           stripped_line = stripped_line.replace('LP: #%s' % bugid, bug_link)
        unreported_lines.append('%s%s' % (prefix, stripped_line))
     os.chdir(cwd)
+    import pdb; pdb.set_trace()
     return unreported_lines
 
 
