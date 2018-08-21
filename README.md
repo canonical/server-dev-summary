@@ -17,15 +17,16 @@ Below is a list of steps to generate the complete summary:
 1. Ubuntu Server Image
     - If not already received, request the image in #marketing
 1. Template & Uploads
-    - Run the `generate.sh` script to create a new markdown file for today.
-    - The `upload_report.py` will automatically run based on the last report's
-      date
+    - Run the `generate.sh` script to create a new markdown file for today and
+      base it off of deltas between the most recent previous report's date
 1. cloud-init and curtin
     - Review the Trello board done column
-    - Summarize any done cards
+    - Summarize any done cards and add any missing items to the auto-generated
+      items
 1. Ubuntu Server
     - Review the Trello board done column
-    - Summarize any done cards
+    - Summarize any done cards and add any missing items to the auto-generated
+      items
 1. Review
     - Send out a link to the draft for review to the team
     - Check spelling and grammar during this time as well
