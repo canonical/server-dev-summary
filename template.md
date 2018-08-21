@@ -18,3 +18,4 @@ and use the Ubuntu Server Team [mailing list](https://lists.ubuntu.com/mailman/l
 
 - Chat on #ubuntu-server on Freenode
 - Email the [ubuntu-server mailing list](https://lists.ubuntu.com/mailman/listinfo/ubuntu-server)
+- Find us on the [Ubuntu Community Hub - server channel](https://discourse.ubuntu.com/c/server)
