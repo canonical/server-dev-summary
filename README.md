@@ -46,6 +46,5 @@ Below is a list of steps to generate the complete summary:
     - Subject: Ubuntu Server development summary - DD Month YYYY
     - to: ubuntu-server@lists.ubuntu.com
     - bcc: lwn@lwn.net
-    - Add link to insights post to top of email
 1. Publish to Twitter
-    - TODO
+    - Ping dpb or post it in #marketing
