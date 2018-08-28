@@ -30,7 +30,6 @@ Below is a list of steps to generate the complete summary:
 1. Review
     - Send out a link to the draft for review to the team
     - Check spelling and grammar during this time as well
-    - Add `http://pad.lv/` links for Launchpad bugs.
 1. Run `publish.sh` to generate html and email formats
 1. Insights
       1. Login to insights.ubuntu.com and create new post

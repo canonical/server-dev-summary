@@ -67,11 +67,9 @@ def get_unreported_commits(project_name, start_date):
        if bug_match:
            bugid = bug_match.groupdict()['bugid']
            bug_link = BUG_LINK_TMPL.format(bugid=bugid)
-           import pdb; pdb.set_trace()
            stripped_line = stripped_line.replace('LP: #%s' % bugid, bug_link)
        unreported_lines.append('%s%s' % (prefix, stripped_line))
     os.chdir(cwd)
-    import pdb; pdb.set_trace()
     return unreported_lines
 
 
