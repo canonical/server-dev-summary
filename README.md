@@ -15,7 +15,7 @@ allow whoever is working on the summary to focus on content and not style.
 Below is a list of steps to generate the complete summary:
 
 1. Ubuntu Server Image
-    - If not already received, request the image in #marketing
+    - [Go create it](https://docs.google.com/presentation/d/10Jj-Qyu1OMhwtijCgZrKqiF4z6Z4NOeT5opowyq6Mew/edit?usp=sharing)
 1. Template & Uploads
     - Run the `generate.sh` script to create a new markdown file for today and
       base it off of deltas between the most recent previous report's date
@@ -46,5 +46,5 @@ Below is a list of steps to generate the complete summary:
     - Subject: Ubuntu Server development summary - DD Month YYYY
     - to: ubuntu-server@lists.ubuntu.com
     - bcc: lwn@lwn.net
-1. Publish to Twitter
-    - Ping dpb or post it in #marketing
+1. Announce
+    - Announce the post in #marketing about the post
