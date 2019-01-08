@@ -4,7 +4,9 @@ The purpose of this communication is to provide a status update and
 highlights for any interesting subjects from the Ubuntu Server Team. If
 you would like to reach the server team, you can find us at
 the #ubuntu-server channel on Freenode. Alternatively, you can sign up
-and use the Ubuntu Server Team [mailing list](https://lists.ubuntu.com/mailman/listinfo/ubuntu-server).
+and use the Ubuntu Server Team [mailing list](https://lists.ubuntu.com/mailman/listinfo/ubuntu-server) or visit the
+[Ubuntu Server discourse hub](https://discourse.ubuntu.com/c/server) for more
+discussion.
 
 ## Spotlight:
 
