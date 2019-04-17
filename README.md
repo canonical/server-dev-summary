@@ -32,7 +32,7 @@ Below is a list of steps to generate the complete summary:
     - Check spelling and grammar during this time as well
 1. Run `publish.sh` to generate html and email formats
 1. Insights
-      1. Login to insights.ubuntu.com and create new post
+      1. Login to admin.insights.ubuntu.com/login and create new post
       2. Create new blog post: articles -> add an article
       3. Title: "Ubuntu Server development summary - DD Month YYYY"
       4. Tags: Ubuntu Server, Server, weekly
@@ -41,6 +41,12 @@ Below is a list of steps to generate the complete summary:
       7. Text Tab: Paste html from chrome app
       8. Bottom Right: Featured Image -> Set Featured Image
       9. Publish!
+1. Discourse
+      1. Login to server hub at https://discources.ubuntu.com/c/server
+      2. Click new topic button 
+      3. Title: "Ubuntu Server development summary - DD Month YYYY"
+      4. Click the 'Upload' button above the text area for the new topic and upload the same png image you created for the insights post
+      5. Paste the html output used in insights step above.
 1. Send email to ubuntu-server
     - Use the $date.email file as the body of the email
     - Subject: Ubuntu Server development summary - DD Month YYYY
