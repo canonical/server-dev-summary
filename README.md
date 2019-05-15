@@ -42,7 +42,7 @@ Below is a list of steps to generate the complete summary:
       8. Bottom Right: Featured Image -> Set Featured Image
       9. Publish!
 1. Discourse
-      1. Login to server hub at https://discources.ubuntu.com/c/server
+      1. Login to server hub at https://discourse.ubuntu.com/c/server
       2. Click new topic button 
       3. Title: "Ubuntu Server development summary - DD Month YYYY"
       4. Click the 'Upload' button above the text area for the new topic and upload the same png image you created for the insights post
