@@ -46,7 +46,7 @@ Below is a list of steps to generate the complete summary:
       2. Click new topic button 
       3. Title: "Ubuntu Server development summary - DD Month YYYY"
       4. Click the 'Upload' button above the text area for the new topic and upload the same png image you created for the insights post
-      5. Paste the html output used in insights step above.
+      5. Paste the markdown output used in insights step above.
 1. Send email to ubuntu-server
     - Use the $date.email file as the body of the email
     - Subject: Ubuntu Server development summary - DD Month YYYY
