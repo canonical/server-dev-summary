@@ -32,15 +32,15 @@ Below is a list of steps to generate the complete summary:
     - Check spelling and grammar during this time as well
 1. Run `publish.sh` to generate html and email formats
 1. Insights
-      1. Login to admin.insights.ubuntu.com/login and create new post
-      2. Create new blog post: articles -> add an article
-      3. Title: "Ubuntu Server development summary - DD Month YYYY"
-      4. Tags: Ubuntu Server, Server, weekly
-      5. Topic: Cloud, Server
-      6. Group: Cloud and server
-      7. Text Tab: Paste html from chrome app
-      8. Bottom Right: Featured Image -> Set Featured Image
-      9. Publish!
+      1. Create a new blog post at
+         https://admin.insights.ubuntu.com/wp-admin/post-new.php
+      2. Title: "Ubuntu Server development summary - DD Month YYYY"
+      3. Tags: Ubuntu Server, Server, weekly
+      4. Topic: Cloud, Server
+      5. Group: Cloud and server
+      6. Text Tab: Paste html from chrome app
+      7. Bottom Right: Featured Image -> Set Featured Image
+      8. Publish!
 1. Discourse
       1. Login to server hub at https://discourse.ubuntu.com/c/server
       2. Click new topic button 
