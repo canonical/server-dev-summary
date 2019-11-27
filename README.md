@@ -19,7 +19,7 @@ Below is a list of steps to generate the complete summary:
 1. Template & Uploads
     - Run the `generate.sh` script to create a new markdown file for today and
       base it off of deltas between the most recent previous report's date
-1. cloud-init and curtin
+1. cloud-init, curtin and git-ubuntu
     - Review the Trello board done column
     - Summarize any done cards and add any missing items to the auto-generated
       items
