@@ -25,5 +25,3 @@ fi
 
 cp template.md "$SUMMARY_FILEPATH"
 ./report_git_backlog.py "$LAST_SUMMARY_DATE" "$SUMMARY_FILEPATH"
-./report_backlog.py "$LAST_SUMMARY_DATE" >> "$SUMMARY_FILEPATH"
-./report_uploads.py "$LAST_SUMMARY_DATE" >> "$SUMMARY_FILEPATH"
