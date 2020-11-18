@@ -11,7 +11,7 @@ import os
 import shutil
 import sys
 from urllib.request import urlopen
-CORE_DEVS = ['Scott Moser', 'Ryan Harper', 'Josh Powers', 'Chad Smith']
+CORE_DEVS = []
 BUG_LINK_TMPL = '[LP: #{bugid}](https://bugs.launchpad.net/bugs/{bugid})'
 
 
@@ -34,8 +34,8 @@ def get_unreported_commits(project_name, start_date):
         previous_status = stream.read()
     if not os.path.exists(project_name):
         with open(os.devnull, 'w') as FNULL:
-            subp.check_call(
-                ['git', 'clone', 'lp:%s' % project_name], stdout=FNULL)
+            git_url = 'git@github.com:canonical/{}.git'.format(project_name)
+            subp.check_call(['git', 'clone', git_url], stdout=FNULL)
     cwd = os.getcwd()
     os.chdir(project_name)
     with open(os.devnull, 'w') as FNULL:
@@ -77,8 +77,8 @@ def main(start_date, doc_file):
     """Get report and print unpublished commits to project."""
     summary_lines = ['\n## cloud-init\n']
     summary_lines.extend(get_unreported_commits('cloud-init', start_date))
-    summary_lines.append('\n## curtin\n')
-    summary_lines.extend(get_unreported_commits('curtin', start_date))
+    summary_lines += ['\n## pycloudlib\n']
+    summary_lines.extend(get_unreported_commits('pycloudlib', start_date))
     summary_content = '\n'.join(summary_lines)
     with open(doc_file, 'rb') as stream:
        template_content = stream.read().decode('utf-8')
