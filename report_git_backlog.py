@@ -76,8 +76,8 @@ def get_unreported_commits(project_name, start_date):
 def main(start_date, doc_file):
     """Get report and print unpublished commits to project."""
     summary_lines = ['\n## cloud-init\n']
-    summary_lines.extend(get_unreported_commits('cloud-init', start_date))
-    summary_lines += ['\n## pycloudlib\n']
+    summary_lines.extend(get_unreported_commits('[cloud-init](https://github.com/canonical/cloud-init)', start_date))
+    summary_lines += ['\n## [pycloudlib](https://github.com/canonical/pycloudlib)\n']
     summary_lines.extend(get_unreported_commits('pycloudlib', start_date))
     summary_content = '\n'.join(summary_lines)
     with open(doc_file, 'rb') as stream:
